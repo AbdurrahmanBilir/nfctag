@@ -50,10 +50,12 @@
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
         android:text="Tap to scan your NFC tag"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="385dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.531" />
 
     <Button
         android:id="@+id/button_storage"
@@ -64,9 +66,11 @@
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
         android:text="Tap to see tags in storage"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="502dp" />
+        app:layout_constraintTop_toBottomOf="@+id/button_scan"
+        app:layout_constraintVertical_bias="0.153" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
